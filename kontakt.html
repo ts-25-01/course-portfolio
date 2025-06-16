@@ -8,16 +8,59 @@
 </head>
 
 <body>
-    <h2>Kontaktformular</h2>
-    <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name"><br><br>
-        <label for="email">Email:</label>
-        <input type="text" name="email" id="email"><br><br>
-        <label for="message">Deine Nachricht:</label><br>
-        <textarea name="message" id="message" rows="4" cols="50"></textarea><br><br>
-        <input type="submit" value="Absenden">
-    </form>
+    <!-- Kopfbereich -->
+    <header>
+        <h1>Projekte vom Kurs 25-01</h1>
+        <p>Webentwickler, Cloud-Architekten, DevOps-Ingenieure, Systemadministratoren, KI-Experten</p>
+        <nav>
+            <ul>
+                <li><a href="about.html">Über mich</a></li>
+                <li><a href="skills.html">Fähigkeiten</a></li>
+                <li><a href="projekte.html">Projekte</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Kontaktformular</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Persönliche Daten</legend>
+                <label for="name">Vollständiger Name:</label>
+                <input required type="text" name="name" id="name" placeholder="Max Mustermann" ><br><br>
+
+                <label for="email">Email:</label>
+                <input required type="email" name="email" id="email" placeholder="max@mustermann.de"><br><br>
+
+                <label for="phone">Telefonnummer:</label>
+                <input required type="tel" name="phone" id="phone" placeholder="+40 (0)123 4567"><br><br>
+
+                <!-- <label for="role">Rolle:</label>
+                <input required type="radio" name="role" id="role" "><br><br> -->
+                <label for="role">Rolle</label>
+                <select name="role-type" id="role-type">
+                    <option value="">Bitte wähle deine Rolle</option>
+                    <option value="admin">Admin</option>
+                    <option value="student">Schüler</option>
+                    <option value="teacher">Lehrer</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Nachricht</legend>
+                <label for="message">Deine Nachricht:</label><br>
+                <textarea name="message" id="message" rows="4" cols="50"></textarea><br><br>   
+            </fieldset>
+            <input type="submit" value="Absenden">
+        </form>
+    </main>
+
+         <!-- Footer-Bereich -->
+      <footer>
+        <p>2025 <b>Kurs-Team-25-01</b></p>
+        <p>
+            <a href="mailto:25-01@techstarter.de">E-Mail schreiben</a>
+        </p>
+      </footer>
 
 </body>
 

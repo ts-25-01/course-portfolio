@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fähigkeiten</title>
+</head>
+<body>
+    <!-- Kopfbereich -->
+    <header>
+        <h1>Unsere Fähigkeiten</h1>
+        <p>Fähigkeiten, die wir auf unserer Reise zum Frontend-Developer erlernen</p>
+        <nav>
+            <ul>
+                <li><a href="about.html">Über mich</a></li>
+                <li><a href="skills.html">Fähigkeiten</a></li>
+                <li><a href="projekte.html">Projekte</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hauptbereich -->
+    <main>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Frontend-Technologien</h3>
+                <!-- Definiere eine Datenstruktur -->
+                <dl class="skill-list">
+                    <dt>HTML5</dt>
+                    <dd>
+                        <meter value="85" min="0" max="100">
+                            85 %
+                        </meter>
+                    </dd>
+                    <dt>CSS</dt>
+                    <dd>
+                        <meter value="5" min="0" max="100">
+                            5 %
+                        </meter>
+                    </dd>
+                    <dt>Javascript</dt>
+                    <dd>
+                        <meter value="0" min="0" max="100">
+                            0 %
+                        </meter>
+                    </dd>
+                </dl>
+                <!-- Weitere Oberkategorie -->
+                 <h3>Backend-Technologien</h3>
+                 <dl class="class-list">
+                    <dt>Flask</dt>
+                    <dd>
+                        <meter value="95" min="0" max="100">
+                            95 %
+                        </meter>
+                    </dd>
+                 </dl>
+                 <h3>Schätze deinen eigenen Stand (1-10)</h3>
+                        <input type="range" min="1" max="10" name="slider" value="5" step="1" oninput="sliderValue.value = slider.value">
+        <output name="sliderValue" for="slider">5</output>
+            </div>
+        </div>
+    </main>
+         <!-- Footer-Bereich -->
+      <footer>
+        <p>2025 <b>Kurs-Team-25-01</b></p>
+        <p>
+            <a href="mailto:25-01@techstarter.de">E-Mail schreiben</a>
+        </p>
+      </footer>
+    
+</body>
+</html>

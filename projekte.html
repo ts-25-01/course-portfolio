@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projekte</title>
 </head>
 <body>
-    Das sind die Projekte
+   <!-- Kopfbereich -->
+    <header>
+        <h1>Projekte vom Kurs 25-01</h1>
+        <p>Webentwickler, Cloud-Architekten, DevOps-Ingenieure, Systemadministratoren, KI-Experten</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="about.html">Über mich</a></li>
+                <li><a href="skills.html">Fähigkeiten</a></li>
+                <li><a href="projekte.html">Projekte</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hauptbereich -->
+     <main>
+        <h2>Projekt-Übersicht</h2>
+        <!-- Tabelle -->
+         <table class="projects-table" border="1">
+            <caption>Detaillierte Übersicht aller Projekte mit Technologien</caption>
+            <thead>
+                <tr>
+                    <th>Projekt</th>
+                    <th>Technologie</th>
+                    <th>Status</th>
+                    <th>Datum</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>D&D-Spiel mit Python</td>
+                    <td>
+                        <span id="Python-D&D-Tech" class="tech-tag">Python</span>
+                        <span id="Colab-D&D-Tech" class="tech-tag">Google Colab</span>
+                    </td>
+                    <td>
+                        <span class="status completed">Abgeschlossen</span>
+                    </td>
+                    <td>
+                        <time datetime="2025-01">Januar 2025</time>
+                    </td>
+                    <td>
+                        <a href="https://github.com/ts-25-01/colab_python/blob/main/D%26D_MVP.ipynb">Github-Repository</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pizza-Rechner mit Pseudocode</td>
+                    <td>
+                        <span class="tech-tag">Pseudocode</span>
+                        <span class="tech-tag">Algorithmen</span>
+                    </td>
+                    <td>
+                        <span class="status completed">Abgeschlossen</span>
+                    </td>
+                    <td>
+                        <time datetime="2025-01">Januar 2025</time>
+                    </td>
+                    <td>
+                        <a href="https://github.com/DerGreed/spielereien/blob/main/pizzateiler.py">Github-Repository</a>
+                    </td>
+                </tr>
+            </tbody>
+         </table>
+         <section class="projects-gallery">
+    <h2>Projekt-Galerie</h2>
+    
+    <div class="projects-grid">
+        <article class="project-card">
+            <img src="./images/d&d.png" 
+                 alt="Screenshot vom D&D Spiel" 
+                 width="400" height="250">
+            <div class="project-info">
+                <h3>D&D</h3>
+                <p>D&D-Spiel in Python</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span><br>
+                    <span class="tech-tag">Google Colab</span>
+                </div>
+                <a href="https://github.com/ts-25-01/colab_python/blob/main/D%26D_MVP.ipynb" class="project-link">Details ansehen →</a>
+            </div>
+        </article>
+    </div>
+     </main>
 </body>
 </html>
